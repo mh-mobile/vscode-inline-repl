@@ -1,5 +1,7 @@
 # Rust Inline REPL
 
+[![Visual Studio Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/mh-mobile.rust-inline-repl)](https://marketplace.visualstudio.com/items?itemName=mh-mobile.rust-inline-repl)
+
 Rust Inline REPL is a VS Code extension that provides an interactive way to execute Rust code directly within your editor. It integrates with Jupyter's Rust kernel (Evcxr) to offer a seamless REPL experience while coding.
 
 ## Features

@@ -1,5 +1,7 @@
 # Ruby Inline REPL
 
+[![Visual Studio Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/mh-mobile.ruby-inline-repl)](https://marketplace.visualstudio.com/items?itemName=mh-mobile.ruby-inline-repl)
+
 Ruby Inline REPL is a VS Code extension that provides an interactive way to execute Ruby code directly within your editor. It integrates with Jupyter's Ruby kernel (IRuby) to offer a seamless REPL experience while coding.
 
 ## Features
