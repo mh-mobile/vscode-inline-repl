@@ -1,0 +1,36 @@
+{
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Extension Development: All",
+      "configurations": [
+        "Extension Development: Rust REPL",
+        "Extension Development: Ruby REPL"
+      ],
+      "preLaunchTask": "watch-core",
+      "stopAll": true
+    }
+  ],
+  "configurations": [
+    {
+      "name": "Extension Development: Rust REPL",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/packages/rust-extension"
+      ],
+      "outFiles": ["${workspaceFolder}/packages/rust-extension/dist/**/*.js"],
+      "preLaunchTask": "watch-rust-extension"
+    },
+    {
+      "name": "Extension Development: Ruby REPL",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/packages/ruby-extension"
+      ],
+      "outFiles": ["${workspaceFolder}/packages/ruby-extension/dist/**/*.js"],
+      "preLaunchTask": "watch-ruby-extension"
+    }
+  ]
+}

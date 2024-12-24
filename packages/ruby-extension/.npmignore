@@ -1,0 +1,12 @@
+.vscode/**
+.vscode-test/**
+src/**
+**/tsconfig.json
+**/tsconfig.tsbuildinfo
+**/.eslintrc.json
+**/*.map
+**/*.ts
+.gitignore
+.yarnrc
+**/node_modules/**
+!node_modules/@vscode/jupyter-extension/**

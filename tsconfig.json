@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "Node16",
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedParameters": true
+  },
+  "exclude": ["node_modules", "**/node_modules/*"]
+}

@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "composite": true,
+    "paths": {
+      "@inline-repl/core": ["../core/src"]
+    }
+  },
+  "references": [
+    {
+      "path": "../core"
+    }
+  ],
+  "include": ["src/**/*"]
+}

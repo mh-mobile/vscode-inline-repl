@@ -1,0 +1,30 @@
+{
+  "name": "inline-repl",
+  "private": true,
+  "version": "1.0.0",
+  "description": "VSCode Inline REPL Extensions",
+  "scripts": {
+    "build": "pnpm build:core && pnpm build:extensions",
+    "build:core": "pnpm --filter @inline-repl/core build",
+    "build:extensions": "pnpm --filter \"*-inline-repl\" build",
+    "watch": "pnpm -r watch",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "clean": "pnpm -r clean",
+    "clean:buildinfo": "rimraf packages/*/tsconfig.tsbuildinfo"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.10",
+    "@types/vscode": "^1.95.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "esbuild": "^0.19.0",
+    "esbuild-node-externals": "^1.9.0",
+    "esbuild-plugin-copy": "^2.1.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.7.2"
+  }
+}

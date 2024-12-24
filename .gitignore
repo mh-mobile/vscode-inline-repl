@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+out/
+dist/
+
+# VSCode workspace settings
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Debug logs
+npm-debug.log*
+pnpm-debug.log*
+
+# TypeScript cache
+*.tsbuildinfo
+
+# OS specific files
+.DS_Store
+Thumbs.db

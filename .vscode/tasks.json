@@ -1,0 +1,68 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "watch-core",
+      "type": "shell",
+      "command": "pnpm",
+      "args": ["--filter", "@inline-repl/core", "watch"],
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "^$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Starting compilation in watch mode...",
+          "endsPattern": "Found 0 errors"
+        }
+      }
+    },
+    {
+      "label": "watch-rust-extension",
+      "type": "shell",
+      "command": "pnpm",
+      "args": ["--filter", "./packages/rust-extension", "watch"],
+      "group": "build",
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "^$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Initial build succeeded",
+          "endsPattern": "watch build succeeded"
+        }
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      },
+      "dependsOn": ["watch-core"]
+    },
+    {
+      "label": "watch-ruby-extension",
+      "type": "shell",
+      "command": "pnpm",
+      "args": ["--filter", "./packages/ruby-extension", "watch"],
+      "group": "build",
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "^$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Initial build succeeded",
+          "endsPattern": "watch build succeeded"
+        }
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      },
+      "dependsOn": ["watch-core"]
+    }
+  ]
+}
